@@ -9,13 +9,10 @@ from collections import deque
 
 
 class Solution:
-    
     def isValidBST(self, root: Optional[TreeNode]) -> bool:
         return self.solution(root)
-        # print(root)
         
-    def solution(self, node, lower=float('-inf'), upper=float('inf')):
-        
+    def solution(self, node, lower=float('-inf'), upper=float('inf')):        
         if node is None:
             return True
         if lower < node.val < upper:
