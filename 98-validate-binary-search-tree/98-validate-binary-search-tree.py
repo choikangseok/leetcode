@@ -19,7 +19,7 @@ class Solution:
         if node is None:
             return True
         if lower < node.val < upper:
-            return self.solution(node.left, lower, node.val) and self.solution(node.right, node.val , upper)
+            return self.solution(node.left, lower, node.val) and self.solution(node.right, node.val, upper)
         else:
             return False
         
