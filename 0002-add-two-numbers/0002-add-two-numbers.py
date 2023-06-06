@@ -13,11 +13,8 @@ class Solution:
         
         
         while True:
-            temp = head.val
-            head.next = ListNode((l1.val + l2.val+ temp)//10)
+            head.next = ListNode((l1.val + l2.val+ head.val)//10)
             head.val = (l1.val + l2.val+ head.val) % 10
-            
-            
             
             if l1.next ==None and l2.next ==None :
                 if head.next.val == 0:
