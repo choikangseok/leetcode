@@ -10,8 +10,8 @@ class Solution:
         
         while l != len(s)-1:
             
-            if len(s)-l < answer:
-                break
+            # if len(s)-l < answer:
+            #     break
             
             if len(set(s[l:r])) == r-l:
                 answer=max(answer, r-l)
